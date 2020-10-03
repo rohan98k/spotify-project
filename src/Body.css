@@ -1,5 +1,7 @@
 .body {
-  border: 1px solid black;
   height: 100vh;
   flex: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #1a1a1a;
 }
