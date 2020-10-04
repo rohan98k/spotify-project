@@ -9,7 +9,7 @@ import { useDataLayerValue } from './DataLayer';
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -29,17 +29,24 @@ function App() {
           user: user,
         });
       });
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists,
+        });
+      });
     }
-    //console.log(token);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-  console.log('The user is >> ', user);
+    //* eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token, dispatch]);
+
+  //console.log('The user is >> ', user);
   //console.log('The token is >> ', token);
 
   return (
     //BEM
     <div className="app">
-      {token ? <Player spotify={spotify} /> : <Login />}
+      {!token && <Login />}
+      {token && <Player spotify={spotify} />}
     </div>
   );
 }
