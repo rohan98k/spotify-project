@@ -5,6 +5,8 @@
   padding-right: 15px;
   padding-top: 20px;
   background-color: #1a1a1a;
+  color: white;
+  overflow-y: overlay;
 }
 
 .body__info {
@@ -32,4 +34,30 @@
   max-height: 200px;
   margin: 0 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.body__songs {
+  margin: 20px, -30px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle {
+  font-size: 70px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1ed760;
+}
+
+.body__shuffle :hover {
+  transition: 200ms transform ease-in-out;
+  transform: scale(1.08);
 }
