@@ -6,3 +6,30 @@
   padding-top: 20px;
   background-color: #1a1a1a;
 }
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white;
+}
+
+.body__infoText {
+  flex: 1;
+}
+.body__infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 14px;
+}
+
+.body__info > img {
+  height: 20vw;
+  object-fit: contain;
+  max-height: 200px;
+  margin: 0 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}

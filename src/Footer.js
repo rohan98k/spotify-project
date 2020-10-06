@@ -13,28 +13,28 @@ import VolumeDownIcon from '@material-ui/icons/VolumeDown';
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="footer__left">
+    <div className='footer'>
+      <div className='footer__left'>
         <img
-          className="footer__albumLogo"
-          src="https://upload.wikimedia.org/wikipedia/en/0/05/Bazzi_-_Cosmic.png"
-          alt="Albumcover"
+          className='footer__albumLogo'
+          src='https://upload.wikimedia.org/wikipedia/en/0/05/Bazzi_-_Cosmic.png'
+          alt='Albumcover'
         />
-        <div className="footer__songInfo">
+        <div className='footer__songInfo'>
           <h4>3:15</h4>
           <p>Bazzi</p>
         </div>
       </div>
 
-      <div className="footer__center">
-        <ShuffleIcon className=" footer__green" />
-        <SkipPreviousIcon className=" footer__icon" />
-        <PlayCircleOutlineIcon fontSize="large" className=" footer__icon" />
-        <SkipNextIcon className=" footer__icon" />
-        <RepeatIcon className=" footer__green" />
+      <div className='footer__center'>
+        <ShuffleIcon className=' footer__green' />
+        <SkipPreviousIcon className=' footer__icon' />
+        <PlayCircleOutlineIcon fontSize='large' className=' footer__icon' />
+        <SkipNextIcon className=' footer__icon' />
+        <RepeatIcon className=' footer__green' />
       </div>
 
-      <div className="footer__right">
+      <div className='footer__right'>
         <Grid container spacing={2}>
           <Grid item>
             <PlaylistPlayIcon />
@@ -43,7 +43,7 @@ function Footer() {
             <VolumeDownIcon />
           </Grid>
           <Grid item xs>
-            <Slider aria-labelledby="continuous-slider" />
+            <Slider aria-labelledby='continuous-slider' />
           </Grid>
         </Grid>
       </div>

@@ -35,6 +35,13 @@ function App() {
           playlists,
         });
       });
+
+      spotify.getPlaylist('37i9dQZF1EjthLV0fCzrvj').then((response) => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response,
+        });
+      });
     }
     //* eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, dispatch]);
@@ -44,7 +51,7 @@ function App() {
 
   return (
     //BEM
-    <div className="app">
+    <div className='app'>
       {!token && <Login />}
       {token && <Player spotify={spotify} />}
     </div>
