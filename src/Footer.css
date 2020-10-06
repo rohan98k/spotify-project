@@ -6,7 +6,6 @@
   height: 65px;
   width: 97%;
   background-color: #1a1a1a;
-  padding: 20px;
 }
 
 .footer__left {
@@ -40,6 +39,7 @@
 }
 
 .footer__albumLogo {
+  padding: 0, 20px, 0, 0;
   height: 60px;
   width: 60px;
   object-fit: contain;
