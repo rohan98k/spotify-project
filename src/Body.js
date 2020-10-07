@@ -69,7 +69,7 @@ function Body({ spotify }) {
           <MoreHorizIcon />
         </div>
         {discover_weekly?.tracks.items.map((item) => (
-          <SongRow playSong={playSong} track={item.track} />
+          <SongRow playSong={playSong} track={item.track} key={item.track.id} />
         ))}
       </div>
     </div>

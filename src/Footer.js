@@ -30,6 +30,7 @@ function Footer({ spotify }) {
         item: song.item,
       });
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [spotify]);
 
   const handlePlayPause = () => {

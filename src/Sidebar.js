@@ -18,12 +18,11 @@ function Sidebar() {
       <SidebarOptions Icon={HomeIcon} title='Home' />
       <SidebarOptions Icon={SearchIcon} title='Search' />
       <SidebarOptions Icon={LibraryMusicIcon} title='Your Library' />
-
       <br />
       <strong className='sidebar__title'>Playlists</strong>
       <hr />
       {playlists?.items?.map((playlist) => (
-        <SidebarOptions title={playlist.name} />
+        <SidebarOptions title={playlist.name} key={playlist.id} />
       ))}
     </div>
   );
